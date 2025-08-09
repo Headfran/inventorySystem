@@ -1,0 +1,172 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f4f7f6; /* Un gris muy claro */
+    margin: 0;
+    padding: 2rem;
+    color: #333; /* Texto oscuro para buena legibilidad */
+    display: flex; /* Centra el contenido en la página */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.imagen {
+    position: absolute;
+    margin-left: -100%;
+    margin-top: -20px;
+}
+
+nav select {
+    margin-left: 200%;
+}
+
+/* Estilos para el contenedor de navegación */
+nav {
+    margin-bottom: 2rem; /* Espacio debajo del menú */
+    text-align: center; /* Centra el menú en la página */
+}
+
+/* Estilos para el elemento <select> */
+select {
+    font-family: inherit; /* Hereda la fuente del body */
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem; /* Espaciado interno */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #495057; /* Color de texto */
+    cursor: pointer;
+    appearance: none; /* Elimina la apariencia nativa del navegador */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    -moz-appearance: none; /* Para Firefox */
+    width: 250px; /* Ancho fijo para que no se vea desproporcionado */
+    outline: none; /* Elimina el contorno al enfocar */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Efecto al pasar el mouse por encima */
+select:hover {
+    border-color: #f7a6b0; /* Borde rosa suave al pasar el mouse */
+}
+
+/* Efecto al enfocar (cuando el usuario hace clic) */
+select:focus {
+    border-color: #f7a6b0;
+    box-shadow: 0 0 0 3px rgba(247, 166, 176, 0.4); /* Sombra suave para resaltar */
+}
+
+/* Estilos para las opciones dentro del menú */
+option {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    margin-top: 80px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 90%; /* Ajusta el ancho de la tabla a un 90% de su contenedor */
+    max-width: 900px; /* Limita el ancho máximo para pantallas muy grandes */
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.85rem 1.2rem; /* Padding intermedio */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Celdas del cuerpo de la tabla */
+td {
+    padding: 0.85rem 1.2rem; /* Padding intermedio */
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Efecto de 'hover' en las filas */
+tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Última fila sin borde inferior */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/*...............................................*/
+/* Estilos para el contenedor del filtro */
+.filtro-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para cada grupo de filtro (label + input) */
+.filtro-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-grupo label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Estilos para los campos de fecha */
+input[type="date"] {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    color: #495057;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #f7a6b0;
+    box-shadow: 0 0 0 3px rgba(247, 166, 176, 0.4);
+}
+
+/* Estilos para el botón de filtrar */
+.btn-filtrar {
+    background-color: #495057;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-filtrar:hover {
+    background-color: #343a40;
+}
+
+/* Título de la sección de historial */
+h2 {
+    color: #444;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
